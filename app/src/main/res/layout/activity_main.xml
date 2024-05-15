@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/main_background"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome,"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="0dp"/>
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lets Chat!"
+        android:layout_below="@id/t1"
+        android:textSize="52sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+
+
+    <EditText
+        android:id="@+id/edit_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:background="@drawable/edittext_border"
+        android:padding="10dp"
+        android:layout_below="@id/t2"
+        android:inputType="text"
+        android:imeOptions="actionDone"
+        android:layout_marginTop="16dp"/>
+
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        android:layout_below="@id/edit_username"
+        android:background="@drawable/button_background"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>
